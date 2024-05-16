@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Popins', sans-serif;
+}
+.navbar{
+    display: inline-flex;
+    background-color: rgb(246, 247, 247);
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    position: sticky;
+}
+.navbar ul{
+    margin-left: 55%;
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navbar ul li{
+    padding: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: brown;
+}
+.logo{
+    padding-top: 20px;
+    padding: 20px;
+}
+main{
+    height: 88vh;
+    width: 100%;
+    animation: changebg 5s ease-in forwards infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+@keyframes changebg{
+    0%{
+        background-image: url(./assets/House2.jpg);
+    }
+    25%{
+        background-image: url(./assets/livingroom.jpg);
+    }
+    50%{
+        background-image: url(./assets/House2.jpg);
+    }
+    75%{
+        background-image: url(./assets/couch.jpg);
+    }
+    100%{
+        background-image: url(./assets/House1.jpg);
+    }
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+    
+}
+.overlay p{
+    top: 50%;
+    color: rgb(247, 248, 248);
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15%;
+    margin-bottom: 50px;
+
+    
+}
+.explore{
+    text-align: center;
+    color: rgb(227, 226, 223);
+    text-decoration: none;
+    border: 25px;
+    justify-content: center;
+    /* top right bottom left */
+    padding: 40% 40% 40% 45%;
+    align-items: center;
+
+
+
+}
+.button1{
+    cursor: pointer;
+    background: transparent;
+    color: rgb(240, 245, 245);
+    padding: 20px 20px;
+    border:  solid;
+    border-radius: 10px;
+    width: 140px;
+    font-size: 20px;
+    transition: .5s;
+
+}
+button:hover{
+    color: rgb(12, 12, 12);
+    background-color: rgb(205, 197, 197);
+}
+
+.description{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    
+    
+}
+.container1{
+    display: flex;
+    gap: 5px;
+    padding: 30px;
+   justify-content: center;
+}
+.my-images{
+    flex-direction: row;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 100px;
+}
+.my-images img{
+    width: 400px;
+    height: 300px;
+    
+}
+.my-images h3{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+}
+.explore1{
+    padding: 30px;
+    
+    margin-top: 30px;
+}
+.button2{
+    width: 140px;
+    border: 2px solid black;
+    padding: 10px;
+    height: 60px;
+    background-color: whitesmoke;
+    transition: 1s;
+    font-size: 20px;
+
+}
+
+.button2:hover{
+    background-color: black;
+    color: white;
+    
+}
